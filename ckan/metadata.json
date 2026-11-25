@@ -1,0 +1,63 @@
+{
+  "spec_version": "v1.4",
+  "identifier": "USI-Core-MM",
+  "name": "USI Core (MMW)",
+  "abstract": "Kontainers, Reactors and shared tools for USI mods, with community fixes",
+  "description": "Minmus Machine Works fork of https://github.com/UmbraSpaceIndustries/USI_Core with community fixes. It replaces the official USI-Core package (provides and conflicts with it), so mods that depend on USI-Core still install.",
+  "author": [
+    "RoverDude",
+    "Machine-Maker"
+  ],
+  "license": "restricted",
+  "release_status": "stable",
+  "ksp_version_min": "1.8",
+  "ksp_version_max": "1.12.99",
+  "resources": {
+    "homepage": "https://github.com/MinmusMachineWorks/USI_Core",
+    "repository": "https://github.com/MinmusMachineWorks/USI_Core",
+    "x_upstream": "https://github.com/UmbraSpaceIndustries/USI_Core"
+  },
+  "provides": [
+    "USI-Core"
+  ],
+  "conflicts": [
+    {
+      "name": "USI-Core"
+    },
+    {
+      "name": "SETI-CommunityTechTree"
+    }
+  ],
+  "depends": [
+    {
+      "name": "FirespitterCore",
+      "min_version": "v7.6.0"
+    },
+    {
+      "name": "ModuleManager",
+      "min_version": "2.8.0"
+    },
+    {
+      "name": "USITools",
+      "min_version": "0.9.0.0"
+    },
+    {
+      "name": "CommunityResourcePack",
+      "min_version": "0.7.0.0"
+    }
+  ],
+  "install": [
+    {
+      "find": "UmbraSpaceIndustries/Kontainers",
+      "install_to": "GameData/UmbraSpaceIndustries"
+    },
+    {
+      "find": "UmbraSpaceIndustries/ReactorPack",
+      "install_to": "GameData/UmbraSpaceIndustries"
+    },
+    {
+      "find": "UmbraSpaceIndustries/USICore",
+      "install_to": "GameData/UmbraSpaceIndustries"
+    }
+  ]
+}
